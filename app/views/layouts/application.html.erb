@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Shootergame</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  
+  <%= javascript_include_tag('phaser.min.js') %>
+  <%= javascript_include_tag('load.js') %>
+  <%= javascript_include_tag('splash.js') %>
+  <%= javascript_include_tag('play.js') %>
+  <%= javascript_include_tag('over.js') %> 
+  <%= javascript_include_tag('game.js') %>
+  
+  
+    
+  </head>
+  <nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand" href="#">A Game</a>
+  </nav>
+
+  <body>
+    <%= yield %>
+  </body>
+
+</html>
